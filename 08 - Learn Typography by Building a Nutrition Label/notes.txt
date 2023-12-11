@@ -1,0 +1,32 @@
+Nutrition labels have a lot of bold text to draw attention to important information. Rather than targeting each element that needs to be bold, it is more efficient to use a class to apply the bold styling to every element.
+
+The float property is used to place an element on the left or right of its container, allowing other content (such as text) to wrap around it.
+
+<p class="bold">Serving size <span class="right">2/3 cup (55g)</span></p>
+
+!!!!! The rem unit stands for root em, and is relative to the font size of the html element.
+
+ponovi što je overflow: hidden;
+
+Typography is often more art than science. You may have to tweak things like alignment until it looks correct. Give your .calories-info span selector a margin-top set to -7px. This will shift your 230 text into place.
+
+Give the .divider selector a clear property set to right. This will clear the float property, pushing the divider and any following content down below the float text.
+
+The clear CSS  property sets whether an element must be moved below (cleared) floating  elements that precede it. The clear property applies to floating and non-floating elements.
+When applied to non-floating blocks, it moves the border edge  of the element down until it is below the margin edge  of all relevant floats. The non-floated block's top margin collapses.
+
+Essentialy, pomiče taj element skroz dolje
+Is a keyword indicating that the element is moved down to clear past right floats.
+-----------------------------------------------------------------------------------------------------------
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+
+Modify your .daily-value p selector to exclude the .no-divider elements.
+
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}

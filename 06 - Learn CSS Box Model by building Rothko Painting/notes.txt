@@ -1,0 +1,40 @@
+In the CSS box model, every HTML element is treated as a box with four areas.
+
+CONTENT -> PADDING -> BORDER -> MARGIN
+
+- The content is surrounded by a space called padding,
+  similar to how bubble wrap separates an item from the box around it.
+
+- Think of the border like the cardboard box your item was shipped in.
+
+- Margin is the area outside of the box, and can be used to control
+  the space between other boxes or elements.
+
+#NOTE div sam po sebi već zauzima neki prostor iako nema teksta u sebi, to možemo testirati
+tako da postavimo neki width i height na njega + background-color
+
+Margin and Padding accept two and three values also in shorthand form, for example:
+
+margin: 50px 75px;  // here, top-bottom margin is 50px and right-left margin is 75px, same is true for padding also.
+
+margin: 50px 35px 75px;  // here, top margin is 50px right-left margin is 35px and bottom margin is 75px, same is true for padding also.
+
+It applies in clock-wise direction starting from top right bottom left.
+
+!!! IMPORTANT
+Adding 1 pixel of padding to the top, bottom, left, and right of the canvas changed its dimensions to 502 pixels x 602 pixels.
+Replace the padding property with overflow set to hidden - changing the canvas back to its original dimensions.
+
+/* The syntax of the first radius allows one to four values */
+/* Radius is set for all 4 sides */
+border-radius: 10px;
+
+/* top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5%;
+
+/* top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 2px 4px 2px;
+
+/* top-left | top-right | bottom-right | bottom-left */
+border-radius: 1px 0 3px 4px;
+

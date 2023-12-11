@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+    font-family: Impact, serif; /* Fallback Value = serif */
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Impact, serif; /* Fallback Value = serif */
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* TOP, BOTTOM, LEFT & RIGHT padding set to 20px */
+    max-width: 500px;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+    /* width: 50% Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code
+    creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.*/
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.established {
+    font-style: italic;
+}
+
+hr {
+    height: 2px; /* + 1 border gore + 1 border dolje =4px total */
+    background-color: brown;
+    border-color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {                 /* Pseudoselector za posjećeni link => a:visited */
+    color: black;
+}
+
+a:hover {                   /* Pseudoselector za hoverani link => a:hover */
+    color: brown;
+}
+
+a:active {                  /* Pseudoselector za active link => a:active */
+    color: brown;
+}

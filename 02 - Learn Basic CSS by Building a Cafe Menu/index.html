@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Since the p element added in the previous step provides supplemental information about the cafe, nest both the h1 and p elements in a header element. -->
+    <div class="menu">
+        <header>
+            <h1>CAMPER CAFE</h1>
+            <p class="established">Est. 2020</p>
+        </header>
+        <hr/>
+        <main>
+            <!-- There will be two sections on the menu, one for coffees and one for desserts. -->
+            <section>
+                <h2>Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+                <!-- article elements commonly contain multiple elements that have related information. In this case,
+                it will contain a coffee flavor and a price for that flavor. Nest two p elements inside your article element. -->
+                <article class="item">
+                    <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p><p class="price">4.50</p>
+                </article>
+            </section>
+            <section>
+                <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                <article class="item">
+                    <p class="dessert">Donut</p><p class="price">1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake </p><p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                </article>
+            </section>
+        </main>
+        <hr class="bottom-line"/>
+        <footer>
+            <p><a href="https://www.freecodecamp.org">Visit our website</a></p>
+            <p class="address">123 Free Code Camp Drive</p>
+        </footer>
+    </div>
+</body>
+</html>

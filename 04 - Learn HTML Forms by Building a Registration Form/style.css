@@ -1,0 +1,77 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0; /* gets rid of horizontal scrollbar */
+    background-color: #1b1b32;
+    color: #f5f6f7; /* tekst će biti ove default boje u body-u, osim ako nije overwrightan negdje drugdje */
+    font-family: Tahoma, serif;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw; /* viewport width - Specifying 10vw is equivalent to occupying 10% of entire visible screen width*/
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    /*In CSS rem stands for “root em”, a unit of measurement that represents the font size of the root element.
+    This means that 1rem equals the font size of the html element, which for most browsers has a default value of 16px.
+    Using rem can help ensure consistency of font size and spacing throughout your UI. */
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a {
+    color: #dfdfe2
+}

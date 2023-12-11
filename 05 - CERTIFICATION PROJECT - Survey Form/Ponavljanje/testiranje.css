@@ -1,0 +1,45 @@
+/* Select all elements, and set their background color to yellow*/
+
+* {
+    background: yellow;
+}
+
+/* Select all elements inside <div> elements and set their background color to yellow */
+
+div * {
+    background-color: yellowgreen;
+}
+
+/* The first line of every <p> element. */
+p::first-line {
+    background: white;
+    color: blue;
+    text-transform: uppercase;
+}
+
+/* Prije body elementa ... dodaj content "Before" */
+
+body::before {
+    content: "Before";
+}
+
+/* Nakon body elementa ... dodaj content "After" */
+
+body::after {
+    content: "After";
+}
+
+.testiranje {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+    padding: 2.5rem 0.625rem;
+}
+
+main {
+    background: red;
+}
+
+/* ---- BOX-SIZING
+
+ */
